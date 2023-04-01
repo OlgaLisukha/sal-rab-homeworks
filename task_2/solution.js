@@ -18,7 +18,7 @@ function calcShipping(sum, min, shipping) {
 
     let shippingSum = 0;
 
-    if (productsSum = 0) {
+    if (productsSum == 0) {
         shippingSum = 0;
     }
 
@@ -51,7 +51,7 @@ function calcDiscount(sum, min, discount) {
     let discountSum = 0;
 
      if (productsSum >= discountMinSum) {
-        discountSum = discountPart * productsSum;
+        discountSum = discountPart/100 * productsSum;
      } else {
         discountSum = 0;
 
